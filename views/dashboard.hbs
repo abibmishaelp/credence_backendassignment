@@ -85,9 +85,9 @@
                         <div class="pad-all">
                             <p class="text-muted"> {{this.summary}}</p>
                             <div class="pad-btm">
-                                <input type="hidden" id="foo" name="zyx" value="{{this}}" />
+                                <input type="hidden" id="foo" name="zyx" value="{{this.name}}" />
                                 <button id="edit" class="btn btn-primary" data-value="{{this}}">Edit</button>
-                                <input type="hidden" id="foo" name="zyx" value="{{this}}" />
+                                <input type="hidden" id="foo" name="zyx" value="{{this.name}}" />
                                 <button id="delete" class="btn btn-primary" data-value="{{this}}">Delete</button>
                             </div>
                         </div>
@@ -285,16 +285,18 @@
                 });
                 //Deleting User
                 $("#delete").click(function () {
-                    let data = $("input#foo").val();
+                    let data = {
+                        name: $("input#foo").val()
+                    }
                     console.log("data", data);
-                    /*$.ajax({
+                    $.ajax({
                         url: "/",
-                        method: "DELETE",
-                        name: data,
+                        method: "delete",
+                        data: data,
                         success: function (result) {
                             console.log("Result DELETED");
                         }
-                    });*/
+                    });
                 });
             });
         </script>
