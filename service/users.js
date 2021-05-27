@@ -68,9 +68,8 @@ exports.delete = async (req) => {
   let dbclient;
   const collection = req.app.locals.collection;
   try {
-    let query = "ObjectId(" + JSON.stringify(req.body.id) + ")";
-    console.log("query", query);
-    dbclient = await collection.deleteOne({ "_id": query });
+    console.log("result", req.body.name);
+    dbclient = await collection.deleteMany({ "name": req.body.name });
     console.log("result", dbclient.deletedCount);
     if (dbclient.deletedCount > 0) {
       return "Deleted Successfully";

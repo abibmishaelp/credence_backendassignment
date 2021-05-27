@@ -30,7 +30,10 @@ router.post('/', async (req, res) => {
   } catch (e) {
     console.log("Error", e);
   } finally {
-    res.render('index', { title: result });
+    res.render('dashboard', {
+      title: "Welcome to Dashboard",
+      data: result
+    });
   }
 });
 
