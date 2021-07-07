@@ -2,7 +2,7 @@
 # REST API Server 
 # Creating a CRUD-base routes using Nodejs and communicating with the mongodb database.
 
-   ****** FOR WINDOWS ******
+  ****** FOR WINDOWS ******
 
 To run the project in windows : 
 
@@ -20,7 +20,7 @@ in the file called".env".
 
 5. Exit the proccess and close the command prompt to exit the project.
 
-   ****** FOR LINUX ****** 
+  ****** FOR LINUX ****** 
     
 To run the project in Linux :
 
@@ -38,7 +38,7 @@ in the file called".env".
 
 5. Exit the proccess and close the terminal to exit the project.
 
-    ****** CRUD OPERATIONS ******
+  ****** CRUD OPERATIONS ******
 
 1. Read - We can get the list of users in the dashboard.
 
