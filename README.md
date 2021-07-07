@@ -1,6 +1,5 @@
-# credence_backendassignment
-# REST API Server 
-# Creating a CRUD-base routes using Nodejs and communicating with the mongodb database.
+
+# Task to create a CRUD-based routes using Nodejs and communicating with the mongodb database.
 
   ****** FOR WINDOWS ******
 
